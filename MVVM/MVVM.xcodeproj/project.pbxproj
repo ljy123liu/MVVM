@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2D581D751CF2CDF600EC4318 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D581D741CF2CDF600EC4318 /* main.m */; };
 		2D581D781CF2CDF600EC4318 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D581D771CF2CDF600EC4318 /* AppDelegate.m */; };
-		2D581D7B1CF2CDF600EC4318 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D581D7A1CF2CDF600EC4318 /* ViewController.m */; };
 		2D581D7E1CF2CDF600EC4318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D581D7C1CF2CDF600EC4318 /* Main.storyboard */; };
 		2D581D801CF2CDF600EC4318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D581D7F1CF2CDF600EC4318 /* Assets.xcassets */; };
 		2D581D831CF2CDF600EC4318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D581D811CF2CDF600EC4318 /* LaunchScreen.storyboard */; };
@@ -90,8 +89,6 @@
 		2D581D741CF2CDF600EC4318 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D581D761CF2CDF600EC4318 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2D581D771CF2CDF600EC4318 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2D581D791CF2CDF600EC4318 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2D581D7A1CF2CDF600EC4318 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2D581D7D1CF2CDF600EC4318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D581D7F1CF2CDF600EC4318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D581D821CF2CDF600EC4318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -267,8 +264,6 @@
 				2D581D981CF2CE4F00EC4318 /* Resources */,
 				2D581D761CF2CDF600EC4318 /* AppDelegate.h */,
 				2D581D771CF2CDF600EC4318 /* AppDelegate.m */,
-				2D581D791CF2CDF600EC4318 /* ViewController.h */,
-				2D581D7A1CF2CDF600EC4318 /* ViewController.m */,
 				2D581D7C1CF2CDF600EC4318 /* Main.storyboard */,
 				2D581D7F1CF2CDF600EC4318 /* Assets.xcassets */,
 				2D581D811CF2CDF600EC4318 /* LaunchScreen.storyboard */,
@@ -677,7 +672,6 @@
 				2D581E271CF2CE5600EC4318 /* SDWebImageDownloaderOperation.m in Sources */,
 				2D581E2E1CF2CE5600EC4318 /* UIImageView+HighlightedWebCache.m in Sources */,
 				2D581E131CF2CE5600EC4318 /* UIImageView+AFNetworking.m in Sources */,
-				2D581D7B1CF2CDF600EC4318 /* ViewController.m in Sources */,
 				2D581E1F1CF2CE5600EC4318 /* JSONKeyMapper.m in Sources */,
 				2D581E2D1CF2CE5600EC4318 /* UIImage+WebP.m in Sources */,
 				2D581E251CF2CE5600EC4318 /* SDWebImageDecoder.m in Sources */,

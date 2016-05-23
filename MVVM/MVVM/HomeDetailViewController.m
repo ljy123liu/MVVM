@@ -9,9 +9,7 @@
 #import "HomeDetailViewController.h"
 #import "Define.h"
 #import "HomeDetailView.h"
-@interface HomeDetailViewController ()
-<UIWebViewDelegate>
-
+@interface HomeDetailViewController () <UIWebViewDelegate>
 @property (nonatomic,strong) HomeDetailView *homeDetailView;
 @end
 @implementation HomeDetailViewController
