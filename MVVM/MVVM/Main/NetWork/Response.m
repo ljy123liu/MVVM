@@ -10,7 +10,8 @@
 
 @implementation Response
 
--(instancetype)initWithDictionary:(NSDictionary *)dic {
+- (instancetype)initWithDictionary:(NSDictionary *)dic {
+    
     kEnumServerState flag = kEnumServerStateSuccess;
     NSObject *data = @"";
     NSString *message = @"";
@@ -25,6 +26,7 @@
 }
 
 - (Response *)initWithState:(kEnumServerState)state result:(NSObject *)data message:(NSString *)message; {
+    
     if (self = [super init]) {
         _status = state;
         _data = data;

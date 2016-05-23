@@ -32,7 +32,7 @@
 #pragma mark - DataRequest
 - (void)dataAccess{
     
-    HomeViewModel *homeViewModel=[[HomeViewModel alloc]init];
+    HomeViewModel *homeViewModel= [HomeViewModel new];
     
     __WeakSelf__ wSelf = self;
     [homeViewModel handleDataWithSuccess:^(NSArray *arr) {
@@ -104,7 +104,7 @@
 
 - (HomeTableView *)homeTableView{
     if (!_homeTableView) {
-        _homeTableView=[[HomeTableView alloc]initWithFrame:self.view.bounds];
+        _homeTableView = [[HomeTableView alloc]initWithFrame:self.view.bounds];
         [_homeTableView setDelegate:self];
         [_homeTableView setDataSource:self];
         [_homeTableView setRowHeight:80.0];

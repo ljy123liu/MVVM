@@ -18,11 +18,10 @@
     
     [[APIClient sharedManager] netWorkGetHomePageListWithPageSize:20 pageNum:0 success:^(Response *respone) {
         
-        if (respone.status==kEnumServerStateSuccess) {
-            
-            NSMutableArray *tmpArr=[NSMutableArray array];
+        if (respone.status == kEnumServerStateSuccess) {
+            NSMutableArray *tmpArr = [NSMutableArray array];
             for (NSDictionary *subDic in (NSArray *)[respone.data valueForKey:@"results"]) {
-                HomeListModel *model=[[HomeListModel alloc]initWithDic:subDic];
+                HomeListModel *model = [[HomeListModel alloc] initWithDic:subDic];
                 [tmpArr addObject:model];
             }
             success(tmpArr);
