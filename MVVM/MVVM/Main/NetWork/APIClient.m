@@ -14,12 +14,13 @@
 
 //单例，每次只允许一次网络请求
 + (APIClient *)sharedManager {
+    
     static APIClient *manager = nil;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
         //一次只允许一个请求
         if (manager == nil) {
-            manager = [[APIClient alloc] init];
+            manager = [APIClient new];
         }
     });
     return manager;
@@ -29,6 +30,7 @@
 - (void)netWorkGetHomePageListWithPageSize:(NSInteger)pageSize pageNum:(NSInteger)pageNum success:(void (^)(Response *))success failure:(void (^)(NSError *))failure {
     
     NSDictionary *paramDict = [NSDictionary dictionaryWithObjectsAndKeys:@(pageSize),@"limit",@(pageNum),@"skip",nil];
+    NSLog(@"param:%@",paramDict);
     [[NetTool shareManager] httpGetRequest:kApi_Get_HomePageList parameter:paramDict success:^(Response *response) {
         success(response);
     } failure:^(NSError *error) {

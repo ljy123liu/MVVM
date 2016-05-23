@@ -53,7 +53,7 @@
 - (UILabel *)newsTitleLabel{
     if (!_newsTitleLabel) {
         _newsTitleLabel=[[UILabel alloc]init];
-        [_newsTitleLabel setFrame:CGRectMake(self.newsImageView.x+self.newsImageView.width+10.0, self.newsImageView.y, kScreenWidth-self.newsImageView.x+self.newsImageView.width-20.0, 40.0)];
+        [_newsTitleLabel setFrame:CGRectMake(self.newsImageView.x+self.newsImageView.width+10.0, self.newsImageView.y, kScreenWidth-self.newsImageView.x-self.newsImageView.width-20.0, 40.0)];
         [_newsTitleLabel setFont:UIFont_size(15.0)];
         [_newsTitleLabel setTextColor:kAppDarkGrayColor];
         [_newsTitleLabel setTextAlignment:NSTextAlignmentLeft];
