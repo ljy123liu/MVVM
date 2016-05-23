@@ -260,15 +260,15 @@
 			children = (
 				2D581E421CF2E05900EC4318 /* HomeListPage */,
 				2D581E311CF2CF3000EC4318 /* Main */,
-				2D581DA11CF2CE5600EC4318 /* ThreePart */,
 				2D581D981CF2CE4F00EC4318 /* Resources */,
+				2D581D731CF2CDF600EC4318 /* Supporting Files */,
+				2D581DA11CF2CE5600EC4318 /* ThreePart */,
 				2D581D761CF2CDF600EC4318 /* AppDelegate.h */,
 				2D581D771CF2CDF600EC4318 /* AppDelegate.m */,
-				2D581D7C1CF2CDF600EC4318 /* Main.storyboard */,
 				2D581D7F1CF2CDF600EC4318 /* Assets.xcassets */,
-				2D581D811CF2CDF600EC4318 /* LaunchScreen.storyboard */,
 				2D581D841CF2CDF600EC4318 /* Info.plist */,
-				2D581D731CF2CDF600EC4318 /* Supporting Files */,
+				2D581D811CF2CDF600EC4318 /* LaunchScreen.storyboard */,
+				2D581D7C1CF2CDF600EC4318 /* Main.storyboard */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -278,14 +278,14 @@
 			children = (
 				2D581D741CF2CDF600EC4318 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		2D581D8C1CF2CDF700EC4318 /* MVVMTests */ = {
 			isa = PBXGroup;
 			children = (
-				2D581D8D1CF2CDF700EC4318 /* MVVMTests.m */,
 				2D581D8F1CF2CDF700EC4318 /* Info.plist */,
+				2D581D8D1CF2CDF700EC4318 /* MVVMTests.m */,
 			);
 			path = MVVMTests;
 			sourceTree = "<group>";
@@ -308,8 +308,7 @@
 				2D581DCA1CF2CE5600EC4318 /* JSONModel */,
 				2D581DE41CF2CE5600EC4318 /* SDWebImage */,
 			);
-			name = ThreePart;
-			path = 3rd;
+			path = ThreePart;
 			sourceTree = "<group>";
 		};
 		2D581DA21CF2CE5600EC4318 /* AFNetworking */ = {
@@ -330,9 +329,9 @@
 				2D581DA71CF2CE5600EC4318 /* AFHTTPRequestOperationManager.m */,
 				2D581DA81CF2CE5600EC4318 /* AFHTTPSessionManager.h */,
 				2D581DA91CF2CE5600EC4318 /* AFHTTPSessionManager.m */,
-				2D581DAA1CF2CE5600EC4318 /* AFNetworking.h */,
 				2D581DAB1CF2CE5600EC4318 /* AFNetworkReachabilityManager.h */,
 				2D581DAC1CF2CE5600EC4318 /* AFNetworkReachabilityManager.m */,
+				2D581DAA1CF2CE5600EC4318 /* AFNetworking.h */,
 				2D581DAD1CF2CE5600EC4318 /* AFSecurityPolicy.h */,
 				2D581DAE1CF2CE5600EC4318 /* AFSecurityPolicy.m */,
 				2D581DAF1CF2CE5600EC4318 /* AFURLConnectionOperation.h */,
@@ -377,9 +376,9 @@
 			children = (
 				2D581DCB1CF2CE5600EC4318 /* JSONModel */,
 				2D581DD41CF2CE5600EC4318 /* JSONModelCategories */,
-				2D581DD71CF2CE5600EC4318 /* JSONModelLib.h */,
 				2D581DD81CF2CE5600EC4318 /* JSONModelNetworking */,
 				2D581DDF1CF2CE5600EC4318 /* JSONModelTransformations */,
+				2D581DD71CF2CE5600EC4318 /* JSONModelLib.h */,
 			);
 			path = JSONModel;
 			sourceTree = "<group>";
@@ -475,11 +474,11 @@
 		2D581E311CF2CF3000EC4318 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				2D581E361CF2CFEC00EC4318 /* NetWork */,
 				2D581E321CF2CF8900EC4318 /* Category */,
+				2D581E361CF2CFEC00EC4318 /* NetWork */,
 				2D581E411CF2D05F00EC4318 /* Define.h */,
 			);
-			name = Main;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		2D581E321CF2CF8900EC4318 /* Category */ = {
@@ -488,21 +487,21 @@
 				2D581E331CF2CFD300EC4318 /* UIView+Frame.h */,
 				2D581E341CF2CFD300EC4318 /* UIView+Frame.m */,
 			);
-			name = Category;
+			path = Category;
 			sourceTree = "<group>";
 		};
 		2D581E361CF2CFEC00EC4318 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				2D581E371CF2D00700EC4318 /* NetTool.h */,
-				2D581E381CF2D00700EC4318 /* NetTool.m */,
 				2D581E3A1CF2D01B00EC4318 /* APIClient.h */,
 				2D581E3B1CF2D01B00EC4318 /* APIClient.m */,
+				2D581E371CF2D00700EC4318 /* NetTool.h */,
+				2D581E381CF2D00700EC4318 /* NetTool.m */,
 				2D581E3D1CF2D02B00EC4318 /* Response.h */,
 				2D581E3E1CF2D02B00EC4318 /* Response.m */,
 				2D581E401CF2D04B00EC4318 /* Urls.h */,
 			);
-			name = NetWork;
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 		2D581E421CF2E05900EC4318 /* HomeListPage */ = {
@@ -510,21 +509,21 @@
 			children = (
 				2D581E461CF2E09800EC4318 /* Model */,
 				2D581E451CF2E09200EC4318 /* View */,
-				2D581E441CF2E08800EC4318 /* ViewModel */,
 				2D581E431CF2E06600EC4318 /* ViewController */,
+				2D581E441CF2E08800EC4318 /* ViewModel */,
 			);
-			name = HomeListPage;
+			path = HomeListPage;
 			sourceTree = "<group>";
 		};
 		2D581E431CF2E06600EC4318 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2D581E5F1CF2EA3600EC4318 /* HomeViewController.h */,
-				2D581E601CF2EA3600EC4318 /* HomeViewController.m */,
 				2D581E5C1CF2EA0500EC4318 /* HomeDetailViewController.h */,
 				2D581E5D1CF2EA0500EC4318 /* HomeDetailViewController.m */,
+				2D581E5F1CF2EA3600EC4318 /* HomeViewController.h */,
+				2D581E601CF2EA3600EC4318 /* HomeViewController.m */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		2D581E441CF2E08800EC4318 /* ViewModel */ = {
@@ -533,20 +532,20 @@
 				2D581E561CF2E80500EC4318 /* HomeViewModel.h */,
 				2D581E571CF2E80500EC4318 /* HomeViewModel.m */,
 			);
-			name = ViewModel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		2D581E451CF2E09200EC4318 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2D581E531CF2E27C00EC4318 /* HomeDetailView.h */,
+				2D581E541CF2E27C00EC4318 /* HomeDetailView.m */,
 				2D581E4D1CF2E24B00EC4318 /* HomeTableView.h */,
 				2D581E4E1CF2E24B00EC4318 /* HomeTableView.m */,
 				2D581E501CF2E25C00EC4318 /* HomeTableViewCell.h */,
 				2D581E511CF2E25C00EC4318 /* HomeTableViewCell.m */,
-				2D581E531CF2E27C00EC4318 /* HomeDetailView.h */,
-				2D581E541CF2E27C00EC4318 /* HomeDetailView.m */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		2D581E461CF2E09800EC4318 /* Model */ = {
@@ -557,7 +556,7 @@
 				2D581E4A1CF2E0DA00EC4318 /* HomeListModel.h */,
 				2D581E4B1CF2E0DA00EC4318 /* HomeListModel.m */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -749,6 +748,7 @@
 				2D581D7D1CF2CDF600EC4318 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		2D581D811CF2CDF600EC4318 /* LaunchScreen.storyboard */ = {
@@ -757,6 +757,7 @@
 				2D581D821CF2CDF600EC4318 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -907,6 +908,7 @@
 				2D581D941CF2CDF700EC4318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D581D951CF2CDF700EC4318 /* Build configuration list for PBXNativeTarget "MVVMTests" */ = {
 			isa = XCConfigurationList;
@@ -915,6 +917,7 @@
 				2D581D971CF2CDF700EC4318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
