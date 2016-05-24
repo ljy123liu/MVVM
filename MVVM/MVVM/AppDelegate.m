@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HomeViewController.h"
 #import "Define.h"
+#import <JSPatch/JSPatch.h>
 @interface AppDelegate ()
 
 @end
@@ -17,13 +18,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [JSPatch testScriptInBundle];
+    
     // Override point for customization after application launch.
     self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setBackgroundColor:kAppWhiteColor];
     
     //首页
-    HomeViewController *homeVC=[[HomeViewController alloc]init];
-    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:homeVC];
+    HomeViewController *homeVC = [HomeViewController new];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:homeVC];
     [self.window setRootViewController:nav];
     
     [self.window makeKeyAndVisible];

@@ -72,6 +72,10 @@
 		2D581E581CF2E80500EC4318 /* HomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D581E571CF2E80500EC4318 /* HomeViewModel.m */; };
 		2D581E5E1CF2EA0500EC4318 /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D581E5D1CF2EA0500EC4318 /* HomeDetailViewController.m */; };
 		2D581E611CF2EA3600EC4318 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D581E601CF2EA3600EC4318 /* HomeViewController.m */; };
+		2D581F4B1CF4970D00EC4318 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D581F4A1CF4970C00EC4318 /* JavaScriptCore.framework */; };
+		2D581F4D1CF4971700EC4318 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D581F4C1CF4971700EC4318 /* libz.tbd */; };
+		2D581F501CF4974D00EC4318 /* JSPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D581F4F1CF4974D00EC4318 /* JSPatch.framework */; };
+		2D581F521CF4979D00EC4318 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 2D581F511CF4979D00EC4318 /* main.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +221,10 @@
 		2D581E5D1CF2EA0500EC4318 /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
 		2D581E5F1CF2EA3600EC4318 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		2D581E601CF2EA3600EC4318 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2D581F4A1CF4970C00EC4318 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		2D581F4C1CF4971700EC4318 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		2D581F4F1CF4974D00EC4318 /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatch.framework; sourceTree = "<group>"; };
+		2D581F511CF4979D00EC4318 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +232,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D581F501CF4974D00EC4318 /* JSPatch.framework in Frameworks */,
+				2D581F4D1CF4971700EC4318 /* libz.tbd in Frameworks */,
+				2D581F4B1CF4970D00EC4318 /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +269,7 @@
 		2D581D721CF2CDF600EC4318 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				2D581F4E1CF4972A00EC4318 /* Framework */,
 				2D581E311CF2CF3000EC4318 /* Main */,
 				2D581E421CF2E05900EC4318 /* HomeListPage */,
 				2D581D981CF2CE4F00EC4318 /* Resources */,
@@ -269,6 +281,7 @@
 				2D581D841CF2CDF600EC4318 /* Info.plist */,
 				2D581D811CF2CDF600EC4318 /* LaunchScreen.storyboard */,
 				2D581D7C1CF2CDF600EC4318 /* Main.storyboard */,
+				2D581F511CF4979D00EC4318 /* main.js */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -559,6 +572,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		2D581F4E1CF4972A00EC4318 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				2D581F4C1CF4971700EC4318 /* libz.tbd */,
+				2D581F4F1CF4974D00EC4318 /* JSPatch.framework */,
+				2D581F4A1CF4970C00EC4318 /* JavaScriptCore.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -646,6 +669,7 @@
 				2D581D7E1CF2CDF600EC4318 /* Main.storyboard in Resources */,
 				2D581D9D1CF2CE4F00EC4318 /* navigationbar_setting@2x.png in Resources */,
 				2D581DA01CF2CE4F00EC4318 /* tu_empty@3x.png in Resources */,
+				2D581F521CF4979D00EC4318 /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,6 +871,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MVVM",
+				);
 				INFOPLIST_FILE = MVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WanJianTechnology.MVVM;
@@ -858,6 +886,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MVVM",
+				);
 				INFOPLIST_FILE = MVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WanJianTechnology.MVVM;
