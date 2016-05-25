@@ -26,8 +26,15 @@
     
     [self initUI];
     [self dataAccess];
+    
+    //JSPatch Test
+    [self creatView];
 }
 
+#pragma mark - JSPatch Test
+- (void)creatView {
+    
+}
 
 #pragma mark - DataRequest
 - (void)dataAccess{
